@@ -1,9 +1,8 @@
 FROM alpine
-
 MAINTAINER ynaamane <ynaamane@student.42.fr>
 
 RUN apk update && \
-	apk upgrade && \
+	apk upgrade -y && \
 	apk add vim
 
 ENTRYPOINT vim

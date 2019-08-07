@@ -1,10 +1,9 @@
 FROM debian
-
 MAINTAINER ynaamane <ynaamane@student.42.fr>
 
 ENV TSV=3.9.1
 
-RUN apt-get update -y && \
+RUN apt-get update && \
 	apt-get upgrade -y && \
 	apt-get install -y wget bzip2 && \
 
